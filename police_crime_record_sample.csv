@@ -1,0 +1,11 @@
+Name,Crime_Type,Date_of_Crime,Location,Case_Status,Officer_in_Charge
+Suresh,Theft,2023-08-12,Mumbai,Open,Officer A
+Sooresh,Assault,2023-05-19,Delhi,Closed,Officer B
+Sureeeesh,Robbery,2023-07-10,Chennai,Open,Officer C
+Suresh Kumar,Theft,2022-11-25,Bangalore,Closed,Officer A
+Suresh R,Assault,2023-03-03,Pune,Open,Officer D
+Sureesh,Robbery,2021-10-05,Mumbai,Open,Officer E
+Ramesh,Theft,2022-09-17,Delhi,Closed,Officer F
+Raaaamesh,Murder,2020-12-22,Chennai,Closed,Officer G
+Ram,Assault,2021-04-15,Pune,Open,Officer H
+Ram Kumar,Robbery,2021-08-10,Bangalore,Closed,Officer I
