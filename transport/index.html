@@ -1,0 +1,273 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Transportation Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Local Transportation System</h1>
+        <p>Find bus routes, timings, and other nearby transport modes.</p>
+    </header>
+
+    <main>
+        <!-- Bus Information Section -->
+        <section id="bus-info">
+            <h2>Local Bus Routes & Timings</h2>
+            <div class="bus-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Bus No.</th>
+                            <th>Route</th>
+                            <th>Departure</th>
+                            <th>Arrival</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bus-timings">
+                        <!-- Dynamic Content will be added here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Multi-Modal Transport Section -->
+        <section id="multi-modal">
+            <h2>Multi-Modal Transport Availability</h2>
+            <div class="multi-modal-list">
+                <ul id="transport-modes">
+                    <!-- Dynamic Content will be added here -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Nearby Auto & Share Auto Availability -->
+        <section id="nearby-auto">
+            <h2>Nearby Auto & Shared Auto Availability</h2>
+            <div class="auto-availability">
+                <ul id="auto-list">
+                    <!-- Dynamic Content will be added here -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Local Transport Info | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Transportation Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Add FontAwesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <h1>TransitConnect</h1>
+            <ul>
+                <li><a href="#bus-info">Bus Routes</a></li>
+                <li><a href="#multi-modal">Transport Modes</a></li>
+                <li><a href="#nearby-auto">Nearby Autos</a></li>
+                <li><a href="#map-section">Map</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Your Local Transportation Partner</h2>
+        <p>Find buses, autos, and all the transport modes you need at your fingertips.</p>
+        <button class="cta-button">Book Now</button>
+    </section>
+
+    <!-- Bus Information Section -->
+    <section id="bus-info">
+        <h2>Local Bus Routes & Timings</h2>
+        <div class="bus-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bus No.</th>
+                        <th>Route</th>
+                        <th>Departure</th>
+                        <th>Arrival</th>
+                    </tr>
+                </thead>
+                <tbody id="bus-timings">
+                    <!-- Dynamic Content will be added here -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Multi-Modal Transport Section -->
+    <section id="multi-modal">
+        <h2>Multi-Modal Transport Availability</h2>
+        <div class="multi-modal-list">
+            <ul id="transport-modes">
+                <!-- Dynamic Content will be added here -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Nearby Auto & Share Auto Availability -->
+    <section id="nearby-auto">
+        <h2>Nearby Auto & Shared Auto Availability</h2>
+        <div class="auto-availability">
+            <ul id="auto-list">
+                <!-- Dynamic Content will be added here -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map-section">
+        <h2>Find Nearby Transport on Map</h2>
+        <div id="map"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 TransitConnect | All Rights Reserved</p>
+    </footer>
+
+    <!-- Google Maps API -->
+    <script>
+        function initMap() {
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 12,
+                center: { lat: 28.7041, lng: 77.1025 } // Default: Delhi, India
+            });
+
+            // Example of adding a marker
+            const marker = new google.maps.Marker({
+                position: { lat: 28.7041, lng: 77.1025 },
+                map: map,
+                title: 'Available Autos Here'
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportation System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">TransportEase</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#bus-routes">Bus Routes</a></li>
+                <li><a href="#multi-modal">Multi-Modal Transport</a></li>
+                <li><a href="#auto-availability">Nearby Autos</a></li>
+                <li><a href="#map">Map</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Find Your Way with Ease</h1>
+            <p>Plan your trip and track available transportation modes effortlessly.</p>
+            <a href="#bus-routes" class="cta-btn">Plan Your Trip</a>
+            <div class="transport-icons">
+                <i class="fas fa-bus"></i>
+                <i class="fas fa-taxi"></i>
+                <i class="fas fa-train"></i>
+                <i class="fas fa-bicycle"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bus Routes Section -->
+    <section id="bus-routes" class="content-section">
+        <h2>Local Bus Routes & Timings</h2>
+        <div class="bus-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bus No</th>
+                        <th>Route</th>
+                        <th>Departure</th>
+                        <th>Arrival</th>
+                        <th>Track Bus</th>
+                    </tr>
+                </thead>
+                <tbody id="bus-timings">
+                    <!-- Data will be injected here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Multi-Modal Transport Section -->
+    <section id="multi-modal" class="content-section">
+        <h2>Multi-Modal Transportation</h2>
+        <ul id="transport-modes">
+            <!-- Data will be injected here by JavaScript -->
+        </ul>
+    </section>
+
+    <!-- Auto Availability Section -->
+    <section id="auto-availability" class="content-section">
+        <h2>Nearby Auto & Share Auto Availability</h2>
+        <ul id="auto-list">
+            <!-- Data will be injected here by JavaScript -->
+        </ul>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="content-section">
+        <h2>Find Nearby Transportation on the Map</h2>
+        <div id="googleMap"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Stay Connected</p>
+            <div class="social-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <form id="newsletter-form">
+                <label for="email">Subscribe to our newsletter</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+</body>
+</html>
